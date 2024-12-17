@@ -4,6 +4,9 @@ import androidx.room.ColumnInfo;
 import androidx.room.Entity;
 import androidx.room.PrimaryKey;
 
+// エンティティクラス
+// データベースのテーブルを定義する
+// @Entityアノテーションをクラスの前につける
 @Entity
 public class User {
     @PrimaryKey

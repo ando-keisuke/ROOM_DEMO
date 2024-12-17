@@ -7,6 +7,9 @@ import androidx.room.Query;
 
 import java.util.List;
 
+// データアクセスオブジェクト
+// データベースにアクセスするためのメソッドを定義する
+// @Daoアノテーションをクラスの前につける
 @Dao
 public interface UserDao {
     @Query("SELECT * FROM user")
