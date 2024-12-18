@@ -54,9 +54,12 @@ public interface UserDao {
 DAOごとに、引数がない、DAOのインスタンスを返す抽象メソッドを定義する必要がある
 
 例 : AppDatabase
+
 ↓アノテーション
 @Database(entities = {User.class}, version = 1)
+
 // 引数がなくて、UserDaoのインスタンスを返す抽象メソッド
+
 public abstract class AppDatabase extends RoomDatabase {
     public abstract UserDao userDao();
 }
